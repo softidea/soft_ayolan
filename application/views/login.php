@@ -17,16 +17,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link href="../../css/bootstrap.css">
         
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+        <style type="text/css">
+            
+            body
+            {     
+                background :url(http://fsczone.com/ayolan_set/back_img.jpg) no-repeat left top;
+                //background-size: 100%;  
+            }
+            .wapper
+            {
+                padding-top: 80px;     
+            }
+        </style>
     </head>
-    <body>
+    <body oncontextmenu="return false;">
         
         
     <!--Panel-->
     <div class="container">
         <div class="row">
-         
-        <div class="col-sm-5">
+            <div class="col-lg-6"></div>
+          
+            <div class="col-sm-4">
+    <div class="wapper">
         <div class="card text-xs-center">
             <div class="card-header default-color">
                 <h3 style="color: white;">Ayolan Invesments</h3>
@@ -43,8 +56,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <input type="password" id="form1" class="form-control">
                     <label for="form1" class="">Password</label>
                 </div>
-                
+                <form class="form-inline">
+                <fieldset class="form-group">
+                <input type="checkbox" class="filled-in" id="checkbox2">
+                <label for="checkbox2">Forget Password</label>
+            </fieldset>
                 <button type="button" class="btn btn-default">Login Here</button>
+                </form>
             </div>
             <div class="card-footer text-muted default-color">
                 
@@ -60,6 +78,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
     </div>
+                </div>
     <!--/.Panel-->
         
         
