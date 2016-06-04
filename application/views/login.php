@@ -53,7 +53,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
 
-
         <!--Footer Section Opened-->
         <!--Footer Section Opened-->
         <div id="footer">
