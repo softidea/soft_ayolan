@@ -203,7 +203,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h3 class="panel-title">Customers</h3>
                         </div>
                         <div class="panel-body">
-
+                            <img id="panelimage"src="<?php echo base_url("asset/images/home/customer.png"); ?>"/>
                         </div>
                         <div class="list-group">
                             <button type="button" class="list-group-item">New Registration</button>
@@ -213,9 +213,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <button type="button" class="list-group-item">Add a Land Pawn</button>
                             <button type="button" class="list-group-item">Add Installment</button>
                             <button type="button" class="list-group-item">View Installment</button>
-                            <button type="button" class="list-group-item">Morbi leo risus</button>
-                            <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-                            <button type="button" class="list-group-item">Vestibulum at eros</button>
                         </div>
                         <div class="panel-footer">Panel footer</div>
                     </div>
@@ -226,7 +223,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h3 class="panel-title">Services</h3>
                         </div>
                         <div class="panel-body">
-
+                            <img id="panelimage"src="<?php echo base_url("asset/images/home/servicee.png"); ?>"/>
                         </div>
                         <div class="list-group">
                             <button type="button" class="list-group-item">Add Vehicle Lease</button>
@@ -236,9 +233,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <button type="button" class="list-group-item">View Pawns</button>
                             <button type="button" class="list-group-item">View Lands</button>
                             <button type="button" class="list-group-item">Search Installments</button>
-                            <button type="button" class="list-group-item">Morbi leo risus</button>
-                            <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-                            <button type="button" class="list-group-item">Vestibulum at eros</button>
                         </div>
                         <div class="panel-footer">Panel footer</div>
                     </div>
@@ -249,7 +243,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h3 class="panel-title">Reports</h3>
                         </div>
                         <div class="panel-body">
-
+                            <img id="panelimage" style="width: 130px;margin-left: 60px;"src="<?php echo base_url("asset/images/home/reportt.png"); ?>"/>
                         </div>
                         <div class="list-group">
                             <button type="button" class="list-group-item">Lease Reports</button>
@@ -259,9 +253,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <button type="button" class="list-group-item">Customer Reports</button>
                             <button type="button" class="list-group-item">Account Reports</button>
                             <button type="button" class="list-group-item">Custom Reports</button>
-                            <button type="button" class="list-group-item">Morbi leo risus</button>
-                            <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-                            <button type="button" class="list-group-item">Vestibulum at eros</button>
                         </div>
                         <div class="panel-footer">Panel footer</div>
                     </div>
@@ -272,7 +263,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h3 class="panel-title">Settings</h3>
                         </div>
                         <div class="panel-body">
-
+                            <img id="panelimage" style="width: 100px;margin-left: 70px;"src="<?php echo base_url("asset/images/home/settingss.png"); ?>"/>
                         </div>
                         <div class="list-group">
                             <button type="button" class="list-group-item">Cras justo odio</button>
@@ -282,16 +273,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <button type="button" class="list-group-item">Vestibulum at eros</button>
                             <button type="button" class="list-group-item">Cras justo odio</button>
                             <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
-                            <button type="button" class="list-group-item">Morbi leo risus</button>
-                            <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-                            <button type="button" class="list-group-item">Vestibulum at eros</button>
                         </div>
                         <div class="panel-footer">Panel footer</div>
                     </div>
                 </div>
             </div>
             <!--Process Div Panel Set-->
-            <footer style="background: #004D40;margin-top: 10px;text-align: center;color: white;">
+            <footer style="background: #004D40;margin-top: 23px;text-align: center;color: white;">
                 <div id="footer">
                     Copyright © <a href="#" id="footer-caption">Softidea Solutions - 2016</a>
                 </div>
@@ -319,6 +307,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             color: white;
             text-align: center; 
         }
-
+        #panelimage
+        {
+            width: 200px;
+            height: 110px;
+        }
     </style>
 </html>
