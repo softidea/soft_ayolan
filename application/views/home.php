@@ -121,51 +121,52 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <ul class="dropdown-menu mega-dropdown-menu row">
                                 <li class="col-sm-3">
                                     <ul>
-                                        <li class="dropdown-header">Leasing Services</li>                            
+                                        <li class="dropdown-header" style="color: #004D40;">Leasing Services</li>                            
                                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                                             <div class="carousel-inner">
                                                 <div class="item active">
                                                     <a href="#"><img src="http://www.motorbikeslk.com/sites/default/files/bajaj-discover-125.jpg" class="img-responsive" alt="product 1"></a>
-                                                    <h4><small>Motor Bikes</small></h4>                                        
-                                                    <button class="btn btn-primary" type="button">Lease Now</button> <button href="#" class="btn btn-default" type="button">View Leased</button>       
+                                                    <h4 style="color: #004D40;"><small>Motor Bikes</small></h4>                                        
+                                                    <button id="btnhov" class="btn btn" style="background-color: #004D40;color: white;" type="button">Lease Now</button> 
+                                                    <button href="#" class="btn btn" style="background-color: #004D40;color: white;"type="button">View Leased</button> 
                                                 </div><!-- End Item -->
                                                 <div class="item">
                                                     <a href="#"><img src="http://www.dpmco.com/image/data/newrered.jpg" class="img-responsive" alt="product 2"></a>
-                                                    <h4><small>Three Wheels</small></h4>                                        
-                                                    <button class="btn btn-primary" type="button">Lease Now</button> <button href="#" class="btn btn-default" type="button">View Leased</button>        
+                                                    <h4 style="color: #004D40;"><small>Three Wheels</small></h4>                                        
+                                                    <button class="btn btn" style="background-color: #004D40;color: white;" type="button">Lease Now</button> 
+                                                    <button href="#" class="btn btn" style="background-color: #004D40;color: white;"type="button">View Leased</button>        
                                                 </div><!-- End Item -->
                                                 <div class="item">
                                                     <a href="#"><img src="http://www.araliyalandsandhomes.lk/upload_images/property/property_1372848223-Land-pic-03.jpg" class="img-responsive" alt="product 3"></a>
-                                                    <h4><small>Lands</small></h4>                                        
-                                                    <button class="btn btn-primary" type="button">Pawn Now</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span>View Pawned</button>      
+                                                    <h4 style="color: #004D40;"><small>Lands</small></h4>                                        
+                                                    <button class="btn btn" style="background-color: #004D40;color: white;"type="button">Pawn Now</button> <button href="#" class="btn btn" style="background-color: #004D40;color: white;" type="button">View Pawned</button>      
                                                 </div><!-- End Item -->                                
                                             </div><!-- End Carousel Inner -->
                                         </div><!-- /.carousel -->
-                                        <li class="divider"></li>
-                                        <li><a href="#">View all Leases<span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+
                                     </ul>
                                 </li>
                                 <li class="col-sm-3">
                                     <ul>
-                                        <li class="dropdown-header">Customer</li>
+                                        <li class="dropdown-header" style="color: #004D40;">Customer</li>
                                         <li><a href="#">Registration</a></li>
                                         <li><a href="#">Update Customer</a></li>
                                         <li><a href="#">View Customers</a></li>
                                         <li><a href="#">Add new Installments</a></li>
                                         <li><a href="#">Add a Lease</a></li>
                                         <li class="divider"></li>
-                                        <li class="dropdown-header">Motor Bikes</li>
+                                        <li class="dropdown-header" style="color: #004D40;">Motor Bikes</li>
                                         <li><a href="#">New Lease</a></li>
                                         <li><a href="#">View Leases</a></li>
                                     </ul>
                                 </li>
                                 <li class="col-sm-3">
                                     <ul>
-                                        <li class="dropdown-header">Three Wheels</li>
+                                        <li class="dropdown-header" style="color: #004D40;">Three Wheels</li>
                                         <li><a href="#">Add new Lease</a></li>
                                         <li><a href="#">View Leases</a></li>
                                         <li class="divider"></li>
-                                        <li class="dropdown-header">Lands</li>
+                                        <li class="dropdown-header" style="color: #004D40;">Lands</li>
                                         <li><a href="#">New Pawn</a></li>
                                         <li><a href="#">Update Land Pawn</a></li>
                                         <li><a href="#">View Land Pawns</a></li>
@@ -173,18 +174,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </li>
                                 <li class="col-sm-3">
                                     <ul>
-                                        <li class="dropdown-header">Services</li>
+                                        <li class="dropdown-header" style="color: #004D40;">Services</li>
                                         <li><a href="#">Add new Lease</a></li>
                                         <li><a href="#">Add new Pawn</a></li>
                                         <li><a href="#">Pay Installment</a></li>							
                                         <li class="divider"></li>
-                                        <li class="dropdown-header">Search Customers</li>
+                                        <li class="dropdown-header" style="color: #004D40;">Search Customers</li>
                                         <form class="form" role="form">
                                             <div class="form-group">
                                                 <label class="sr-only" for="email">Name | ID</label>
                                                 <input type="email" class="form-control" id="email" placeholder="Name | ID | Service No">                                                              
                                             </div>
-                                            <button type="submit" class="btn btn-primary btn-block">Search</button>
+                                            <button type="submit" class="btn btn btn-block" style="background-color: #004D40;color: white;">Search</button>
                                         </form>                                                       
                                     </ul>
                                 </li>
@@ -312,5 +313,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             width: 200px;
             height: 110px;
         }
+        #btnhov:hover{background-color: #009688;}
     </style>
 </html>
