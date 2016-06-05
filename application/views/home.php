@@ -190,11 +190,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </ul>
 
                         </li>
-
                     </ul>
-
                 </div><!-- /.nav-collapse -->
-
             </nav>
         </div>
     </body>
