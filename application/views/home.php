@@ -100,7 +100,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </head>
     <body>
         <div class="container">
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default" style="background: #004D40;color: white;" >
                 <div class="navbar-header">
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -108,8 +108,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Home</a>
-                    <a class="navbar-brand" href="#">Reports</a>
+                    <a class="navbar-brand" href="#" style="color: white;">Home</a>
+                    <a class="navbar-brand" href="#" style="color: white;">Reports</a>
                 </div>
 
 
@@ -195,7 +195,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div><!-- /.nav-collapse -->
             </nav>
 
-<!--Process Div Panel Set-->
+            <!--Process Div Panel Set-->
             <div class="row">
                 <div class="col-lg-3">
                     <div class="panel panel-default">
@@ -203,7 +203,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h3 class="panel-title">Customers</h3>
                         </div>
                         <div class="panel-body">
-                           
+
+                        </div>
+                        <div class="list-group">
+                            <button type="button" class="list-group-item">New Registration</button>
+                            <button type="button" class="list-group-item">Update Customers</button>
+                            <button type="button" class="list-group-item">Search Customers</button>
+                            <button type="button" class="list-group-item">Add a Vehicle Lease</button>
+                            <button type="button" class="list-group-item">Add a Land Pawn</button>
+                            <button type="button" class="list-group-item">Add Installment</button>
+                            <button type="button" class="list-group-item">View Installment</button>
+                            <button type="button" class="list-group-item">Morbi leo risus</button>
+                            <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+                            <button type="button" class="list-group-item">Vestibulum at eros</button>
                         </div>
                         <div class="panel-footer">Panel footer</div>
                     </div>
@@ -214,7 +226,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h3 class="panel-title">Services</h3>
                         </div>
                         <div class="panel-body">
-                            Panel content
+
+                        </div>
+                        <div class="list-group">
+                            <button type="button" class="list-group-item">Add Vehicle Lease</button>
+                            <button type="button" class="list-group-item">Add Land Pawn</button>
+                            <button type="button" class="list-group-item">Search Leases</button>
+                            <button type="button" class="list-group-item">View Vehicles</button>
+                            <button type="button" class="list-group-item">View Pawns</button>
+                            <button type="button" class="list-group-item">View Lands</button>
+                            <button type="button" class="list-group-item">Search Installments</button>
+                            <button type="button" class="list-group-item">Morbi leo risus</button>
+                            <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+                            <button type="button" class="list-group-item">Vestibulum at eros</button>
                         </div>
                         <div class="panel-footer">Panel footer</div>
                     </div>
@@ -225,7 +249,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h3 class="panel-title">Reports</h3>
                         </div>
                         <div class="panel-body">
-                            Panel content
+
+                        </div>
+                        <div class="list-group">
+                            <button type="button" class="list-group-item">Lease Reports</button>
+                            <button type="button" class="list-group-item">Pawn Reports</button>
+                            <button type="button" class="list-group-item">Vehicle Reports</button>
+                            <button type="button" class="list-group-item">Land Reports</button>
+                            <button type="button" class="list-group-item">Customer Reports</button>
+                            <button type="button" class="list-group-item">Account Reports</button>
+                            <button type="button" class="list-group-item">Custom Reports</button>
+                            <button type="button" class="list-group-item">Morbi leo risus</button>
+                            <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+                            <button type="button" class="list-group-item">Vestibulum at eros</button>
                         </div>
                         <div class="panel-footer">Panel footer</div>
                     </div>
@@ -236,13 +272,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h3 class="panel-title">Settings</h3>
                         </div>
                         <div class="panel-body">
-                            Panel content
+
+                        </div>
+                        <div class="list-group">
+                            <button type="button" class="list-group-item">Cras justo odio</button>
+                            <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+                            <button type="button" class="list-group-item">Morbi leo risus</button>
+                            <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+                            <button type="button" class="list-group-item">Vestibulum at eros</button>
+                            <button type="button" class="list-group-item">Cras justo odio</button>
+                            <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+                            <button type="button" class="list-group-item">Morbi leo risus</button>
+                            <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+                            <button type="button" class="list-group-item">Vestibulum at eros</button>
                         </div>
                         <div class="panel-footer">Panel footer</div>
                     </div>
                 </div>
             </div>
-<!--Process Div Panel Set-->
+            <!--Process Div Panel Set-->
+            <footer style="background: #004D40;margin-top: 10px;text-align: center;color: white;">
+                <div id="footer">
+                    Copyright © <a href="#" id="footer-caption">Softidea Solutions - 2016</a>
+                </div>
+            </footer>
         </div>
     </body>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -259,8 +312,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             background: #004D40;
             color: white;
             text-align: center;
-            
         }
-        
+        .panel-footer
+        {
+            background: #004D40;
+            color: white;
+            text-align: center; 
+        }
+
     </style>
 </html>
