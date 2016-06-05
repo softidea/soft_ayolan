@@ -96,6 +96,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 margin-bottom: 3px;
             }
         </style>
+
     </head>
     <body>
         <div class="container">
@@ -193,12 +194,73 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </ul>
                 </div><!-- /.nav-collapse -->
             </nav>
+
+<!--Process Div Panel Set-->
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="panelheading">
+                            <h3 class="panel-title">Customers</h3>
+                        </div>
+                        <div class="panel-body">
+                           
+                        </div>
+                        <div class="panel-footer">Panel footer</div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="panelheading">
+                            <h3 class="panel-title">Services</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                        <div class="panel-footer">Panel footer</div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="panelheading">
+                            <h3 class="panel-title">Reports</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                        <div class="panel-footer">Panel footer</div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" id="panelheading">
+                            <h3 class="panel-title">Settings</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                        <div class="panel-footer">Panel footer</div>
+                    </div>
+                </div>
+            </div>
+<!--Process Div Panel Set-->
         </div>
     </body>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="http://bootsnipp.com/dist/scripts.min.js"></script>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-
+    <style type="text/css">
+        body
+        {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        #panelheading
+        {
+            background: #004D40;
+            color: white;
+            text-align: center;
+            
+        }
+        
+    </style>
 </html>
