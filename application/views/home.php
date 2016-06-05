@@ -15,118 +15,193 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,700,600italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <style>
 
-
+            @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+            body {
+                font-family: 'Open Sans', 'sans-serif';
+                background:#f0f0f0;
+            }
+            .navbar-nav>li>.dropdown-menu {
+                margin-top:20px;
+                border-top-left-radius:4px;
+                border-top-right-radius:4px;
+            }
+            .navbar-default .navbar-nav>li>a {
+                width:200px;
+                font-weight:bold;
+            }
+            .mega-dropdown {
+                position: static !important;
+                width:100%;
+            }
+            .mega-dropdown-menu {
+                padding: 20px 0px;
+                width: 100%;
+                box-shadow: none;
+                -webkit-box-shadow: none;
+            }
+            .mega-dropdown-menu:before {
+                content: "";
+                border-bottom: 15px solid #fff;
+                border-right: 17px solid transparent;
+                border-left: 17px solid transparent;
+                position: absolute;
+                top: -15px;
+                left: 285px;
+                z-index: 10;
+            }
+            .mega-dropdown-menu:after {
+                content: "";
+                border-bottom: 17px solid #ccc;
+                border-right: 19px solid transparent;
+                border-left: 19px solid transparent;
+                position: absolute;
+                top: -17px;
+                left: 283px;
+                z-index: 8;
+            }
+            .mega-dropdown-menu > li > ul {
+                padding: 0;
+                margin: 0;
+            }
+            .mega-dropdown-menu > li > ul > li {
+                list-style: none;
+            }
+            .mega-dropdown-menu > li > ul > li > a {
+                display: block;
+                padding: 3px 20px;
+                clear: both;
+                font-weight: normal;
+                line-height: 1.428571429;
+                color: #999;
+                white-space: normal;
+            }
+            .mega-dropdown-menu > li ul > li > a:hover,
+            .mega-dropdown-menu > li ul > li > a:focus {
+                text-decoration: none;
+                color: #444;
+                background-color: #f5f5f5;
+            }
+            .mega-dropdown-menu .dropdown-header {
+                color: #428bca;
+                font-size: 18px;
+                font-weight:bold;
+            }
+            .mega-dropdown-menu form {
+                margin:3px 20px;
+            }
+            .mega-dropdown-menu .form-group {
+                margin-bottom: 3px;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6"'>
-                    <div>
-                        <img class="log-wap"src="http://fourgenius.com/ayolan_src/images/login/Logo500x500_transpernt.png">
-                    </div>
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Home</a>
+                    <a class="navbar-brand" href="#">Reports</a>
                 </div>
-                <aside id="column-right" class="col-sm-6">
 
-                    <div class="panel">
-                        <div class="panel-heading" style="background-color: #004D40;">
-                            <h3 class="panel-title"><h2 style="color: white;">AYOLAN INVESTMENTS</h2></h3>
-                            <p class="sub_topic">Finance Management System</p>
-                        </div>
-                        <div class="panel-body">
 
-                            <form action="login-register.php" method="POST" enctype="multipart/form-data">
-                                <div class="form-group">
-                                    <label class="control-label" for="input-email">E-Mail Address :</label>
-                                    <input type="text" name="email" value="" placeholder="E-Mail Address" id="input-email" class="form-control" required/>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label" for="input-password">Password :</label>
-                                    <input type="password" name="password" placeholder="Password" id="input-password" class="form-control" required/>
-                                    <a href="#"><p id="para_forget">Did you forgot your password?</p></a></div>
-                                <input type="submit" name="login_process" value="Login Here" class="btn" id='btn_login'/>
-                            </form>
-                        </div>
-                        <div class="panel-footer">Powered by : <a href="#">Softidea Solutions</a></div>
-                    </div>
-                </aside>
-            </div>
+                <div class="collapse navbar-collapse js-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown mega-dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collection<span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+
+                            <ul class="dropdown-menu mega-dropdown-menu row">
+                                <li class="col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header">Leasing Services</li>                            
+                                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <a href="#"><img src="http://www.motorbikeslk.com/sites/default/files/bajaj-discover-125.jpg" class="img-responsive" alt="product 1"></a>
+                                                    <h4><small>Motor Bikes</small></h4>                                        
+                                                    <button class="btn btn-primary" type="button">Lease Now</button> <button href="#" class="btn btn-default" type="button">View Leased</button>       
+                                                </div><!-- End Item -->
+                                                <div class="item">
+                                                    <a href="#"><img src="http://www.dpmco.com/image/data/newrered.jpg" class="img-responsive" alt="product 2"></a>
+                                                    <h4><small>Three Wheels</small></h4>                                        
+                                                    <button class="btn btn-primary" type="button">Lease Now</button> <button href="#" class="btn btn-default" type="button">View Leased</button>        
+                                                </div><!-- End Item -->
+                                                <div class="item">
+                                                    <a href="#"><img src="http://www.araliyalandsandhomes.lk/upload_images/property/property_1372848223-Land-pic-03.jpg" class="img-responsive" alt="product 3"></a>
+                                                    <h4><small>Lands</small></h4>                                        
+                                                    <button class="btn btn-primary" type="button">Pawn Now</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span>View Pawned</button>      
+                                                </div><!-- End Item -->                                
+                                            </div><!-- End Carousel Inner -->
+                                        </div><!-- /.carousel -->
+                                        <li class="divider"></li>
+                                        <li><a href="#">View all Leases<span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header">Customer</li>
+                                        <li><a href="#">Registration</a></li>
+                                        <li><a href="#">Update Customer</a></li>
+                                        <li><a href="#">View Customers</a></li>
+                                        <li><a href="#">Add new Installments</a></li>
+                                        <li><a href="#">Add a Lease</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Motor Bikes</li>
+                                        <li><a href="#">New Lease</a></li>
+                                        <li><a href="#">View Leases</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header">Three Wheels</li>
+                                        <li><a href="#">Add new Lease</a></li>
+                                        <li><a href="#">View Leases</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Lands</li>
+                                        <li><a href="#">New Pawn</a></li>
+                                        <li><a href="#">Update Land Pawn</a></li>
+                                        <li><a href="#">View Land Pawns</a></li>
+                                    </ul>
+                                </li>
+                                <li class="col-sm-3">
+                                    <ul>
+                                        <li class="dropdown-header">Services</li>
+                                        <li><a href="#">Add new Lease</a></li>
+                                        <li><a href="#">Add new Pawn</a></li>
+                                        <li><a href="#">Pay Installment</a></li>							
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Search Customers</li>
+                                        <form class="form" role="form">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="email">Name | ID</label>
+                                                <input type="email" class="form-control" id="email" placeholder="Name | ID | Service No">                                                              
+                                            </div>
+                                            <button type="submit" class="btn btn-primary btn-block">Search</button>
+                                        </form>                                                       
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div><!-- /.nav-collapse -->
+
+            </nav>
         </div>
-
-
-        <!--Footer Section Opened-->
-        <!--Footer Section Opened-->
-        <div id="footer">
-            Copyright © <a href="#" id="footer-caption">Softidea Solutions - 2016</a>
-        </div>
-        <!--Footer section closed--><!--Footer section closed-->
-
-
-
     </body>
-    <style>
-        #para_forget
-        {
-            text-decoration: none;
-            color:#004D40;
-            margin-top: 8px;
-            font-size: 12px;  
-        }
-        .panel-footer
-        {
-            background-color: #004D40;
-            color: #CFD8DC;
-            font-weight: 500;
-            font-size: 12px;
-            text-align: center;
-        }
-        .sub_topic
-        {
-            color: white;
-            font-size:14px;
-        }
-        #btn_login
-        {
-            background-color: #004D40;
-            color: white;
-        }
-        #btn_login:hover
-        {
-            background-color: #009688;
-        }
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="http://bootsnipp.com/dist/scripts.min.js"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-        body
-        {font-family: 'Source Sans Pro', sans-serif;background-image: url('http://fourgenius.com/ayolan_src/images/login/back.jpg');background-repeat: none;}
-        .panel{border:1px solid #004D40;}
-        #column-right
-        {
-            float: right;
-            margin-top: 90px;
-        }
-        .log-wap
-        {
-            width: 350px;
-            height: 350px;
-            margin-top: 85px;
-            margin-left: 130px;
-        }
-        #footer
-        {
-            background-color:#004D40;
-            color:white;
-            clear:both;
-            text-align:center;
-            padding:5px;
-            margin-top: 112px;
-        }
-        #footer-caption
-        {
-            color: white;
-            text-decoration: none;
-        }
-        #footer-caption:hover
-        {
-            color: #002166;
-        }
-    </style>
+
 </html>
