@@ -156,7 +156,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <button type="button" class="list-group-item">Add a Land Pawn</button>
                             <button type="button" class="list-group-item">Add Installment</button>
                         </div>
-                        <div class="panel-footer" style="height: 20px;"></div>
+                        <div class="panel-footer"><div style="height: 15px;"></div></div>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -175,7 +175,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <button type="button" class="list-group-item">View Pawns</button>
                             <button type="button" class="list-group-item">View Lands</button>
                         </div>
-                        <div class="panel-footer"></div>
+                        <div class="panel-footer"><div style="height: 15px;"></div></div>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -194,7 +194,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <button type="button" class="list-group-item">Customer Reports</button>
                             <button type="button" class="list-group-item">Account Reports</button>
                         </div>
-                        <div class="panel-footer"></div>
+                        <div class="panel-footer"><div style="height: 15px;"></div></div>
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -213,7 +213,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <button type="button" class="list-group-item">Vestibulum at eros</button>
                             <button type="button" class="list-group-item">Cras justo odio</button>
                         </div>
-                        <div class="panel-footer"></div>
+                        <div class="panel-footer"><div style="height: 15px;"></div></div>
                     </div>
                 </div>
             </div>
