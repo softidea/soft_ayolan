@@ -146,7 +146,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h3 class="panel-title">Customers</h3>
                         </div>
                         <div class="panel-body">
-                            <img id="panelimage"src="<?php echo base_url("asset/images/home/customer.png"); ?>"/>
+                            <img class="panelimage"src="<?php echo base_url("asset/images/home/customer.png"); ?>"/>
                         </div>
                         <div class="list-group">
                             <button type="button" class="list-group-item">New Registration</button>
@@ -165,7 +165,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h3 class="panel-title">Services</h3>
                         </div>
                         <div class="panel-body">
-                            <img id="panelimage"src="<?php echo base_url("asset/images/home/servicee.png"); ?>"/>
+                            <img class="panelimage" src="<?php echo base_url("asset/images/home/servicee.png"); ?>"/>
                         </div>
                         <div class="list-group">
                             <button type="button" class="list-group-item">Add Vehicle Lease</button>
@@ -184,7 +184,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h3 class="panel-title">Reports</h3>
                         </div>
                         <div class="panel-body">
-                            <img id="panelimage" style="width: 130px;margin-left: 60px;"src="<?php echo base_url("asset/images/home/reportt.png"); ?>"/>
+                            <img class="panelimage" style="width: 130px;margin-left: 60px;"src="<?php echo base_url("asset/images/home/reportt.png"); ?>"/>
                         </div>
                         <div class="list-group">
                             <button type="button" class="list-group-item">Lease Reports</button>
@@ -203,21 +203,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <h3 class="panel-title">Settings</h3>
                         </div>
                         <div class="panel-body">
-                            <img id="panelimage" style="width: 100px;margin-left: 70px;"src="<?php echo base_url("asset/images/home/settingss.png"); ?>"/>
+                            <img class="panelimage" style="width: 100px;margin-left: 70px;"src="<?php echo base_url("asset/images/home/settingss.png"); ?>"/>
                         </div>
                         <div class="list-group">
-                            <button type="button" class="list-group-item">Cras justo odio</button>
-                            <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
-                            <button type="button" class="list-group-item">Morbi leo risus</button>
-                            <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-                            <button type="button" class="list-group-item">Vestibulum at eros</button>
-                            <button type="button" class="list-group-item">Cras justo odio</button>
+                            <button type="button" class="list-group-item">Setting 01</button>
+                            <button type="button" class="list-group-item">Setting 02</button>
+                            <button type="button" class="list-group-item">Setting 03</button>
+                            <button type="button" class="list-group-item">Setting 04</button>
+                            <button type="button" class="list-group-item">Setting 05</button>
+                            <button type="button" class="list-group-item">Setting 06</button>
                         </div>
                         <div class="panel-footer"><div style="height: 15px;"></div></div>
                     </div>
                 </div>
             </div>
             <!--Process Div Panel Set-->
+            
+            
+            
+            
+            
+            
+            
 
         </div>
         <footer class="navbar-default navbar-fixed-bottom">
