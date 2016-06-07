@@ -22,4 +22,8 @@ class Customer extends CI_Controller {
 	{
 		$this->load->view('customer');
 	}
+        public function registration()
+	{
+		$this->load->view('user_registration');
+	}
 }
