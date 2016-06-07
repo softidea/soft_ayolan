@@ -92,15 +92,13 @@ body
     color: white;
     text-align: center; 
 }
-.panelimage
+#panelimage
 {
     width: 200px;
     height: 110px;
 }
-.panelimage:hover{opacity: 0.5;}
-.panel-body:hover{opacity: 0.5;}
 #btnhov:hover{
-    background-color: #009688;
+     background-color: #009688;
 }
 /* Gradent to all drop down menus */
 .dropdown-menu li > a:hover {
