@@ -389,16 +389,103 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                         <div class="panel-body">
                             <div class="col-sm-6">
-                                <fieldset id="account">
-                                    <legend>01.Property Details</legend>
-                                    <label class="radio-inline"><input type="radio" name="optradio">: Mr</label>
-                                    <label class="radio-inline"><input type="radio" name="optradio">: Mrs</label>
-                                    <label class="radio-inline"><input type="radio" name="optradio">: Miss</label>
+                                <fieldset id="account"><td>
+                                    <legend>Property Details</legend>
                                     <div class="form-group required">
-                                        <label class="control-label" for="input-email">Full Name:</label>
-                                        <input type="text" name="fname" id="fname" value="" placeholder="Full Name" id="input-email" class="form-control" required/>
+                                        <label class="control-label" for="input-email">Reference Person:</label>
+                                        <input type="text" name="fname" id="fname" value="" placeholder="Reference Person" id="input-email" class="form-control" required/>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label class="control-label" for="input-email">Select Property:</label>
+                                        <select name="cbopayment" id="input-region" class="form-control" required onchange="check();">
+                                            <option value=""> --- Please Select --- </option>
+                                            <option value="bike">Bike</option>
+                                            <option value="twheel">Three-Wheel</option>
+                                            <option value="land">Land</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label class="control-label" for="input-email">Upload Customer:</label>
+                                        <input type="file" name="product_image" required/>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label class="control-label" for="input-email">Upload Property:</label>
+                                        <input type="file" name="product_image" required/>
                                     </div>
                                 </fieldset>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <div id="leasepanel">
+                                    <fieldset id="account"><td>
+                                        <legend>Leasing Details</legend>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Vehicle Number:</label>
+                                            <input type="text" name="fname" id="fname" value="" placeholder="Vehicle Number" id="input-email" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Model Year:</label>
+                                            <input type="text" disabled name="fname" id="fname" value="" placeholder="Model Year" id="input-email" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Lease Rate:</label>
+                                            <input type="text" disabled name="fname" id="fname" value="" placeholder="Lease Rate" id="input-email" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Fix Rate:</label>
+                                            <input type="text" name="fname" id="fname" value="" placeholder="Fix Rate" id="input-email" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Select Period:</label>
+                                            <select name="cbopayment" id="input-region" class="form-control" required>
+                                                <option value=""> --- Please Select --- </option>
+                                                <option>6 Months</option>
+                                                <option>1 Year</option>
+                                                <option>2 Year</option>
+                                                <option>3 Year</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="btn btn" id="custcontinue" onclick="gotosecond();">Continue</button>
+                                        <button type="button" class="btn btn" id="backregister" onclick="gotoone();">Back</button>
+                                    </fieldset>
+                                </div>
+
+                                <!--Property Land Panel-->
+                                <div id="landpanel" style="display: none;">
+                                    <fieldset id="account"><td>
+                                        <legend>Land Pawning Details</legend>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Deed Number:</label>
+                                            <input type="text" name="fname" id="fname" value="" placeholder="Deed Number" id="input-email" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Registration Year:</label>
+                                            <input type="text" name="fname" id="fname" value="" placeholder="Registration Year" id="input-email" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Select Period:</label>
+                                            <select name="cbopayment" id="input-region" class="form-control" required>
+                                                <option value=""> --- Please Select --- </option>
+                                                <option>6 Months</option>
+                                                <option>1 Year</option>
+                                                <option>2 Year</option>
+                                                <option>3 Year</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Pawn Rate:</label>
+                                            <input type="text" disabled name="fname" id="fname" value="" placeholder="Lease Rate" id="input-email" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Fix Rate:</label>
+                                            <input type="text" name="fname" id="fname" value="" placeholder="Fix Rate" id="input-email" class="form-control" required/>
+                                        </div>
+
+                                        <button type="button" class="btn btn" id="custcontinue" onclick="gotosecond();">Continue</button>
+                                        <button type="button" class="btn btn" id="backregister" onclick="gotoone();">Back</button>
+                                    </fieldset>
+                                </div>
+                                <!--Property Land Panel-->
                             </div>
                         </div>
                     </div>
@@ -441,12 +528,53 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             background-color: #009688;
         }
         //.thcaption{text-align: center;}
+        #backregister
+        {
+            background-color: #004D40;
+            color: white;
+            float: right;
+            margin-right: 12px;
+        }
+        #backregister:hover
+        {
+            background-color: #009688;
+        }
     </style>
     <script>
-                                    function gotosecond()
-                                    {
-                                        document.getElementById('one').style.display = "none";
-                                        document.getElementById('second').style.display = "block";
-                                    }
+                                            function gotosecond()
+                                            {
+                                                document.getElementById('one').style.display = "none";
+                                                document.getElementById('second').style.display = "block";
+                                            }
+                                            function gotoone()
+                                            {
+                                                document.getElementById('one').style.display = "block";
+                                                document.getElementById('second').style.display = "none";
+                                            }
+
+    </script>
+    <script>
+        function check()
+        {
+            var property = document.getElementById('input-region').value;
+            if (property == 'bike')
+            {
+                alert("Bike");
+                document.getElementById('landpanel').style.display = 'none';
+                document.getElementById('leasepanel').style.display = 'block';
+            }
+            else if (property == 'twheel')
+            {
+                alert("Three-Wheel");
+                document.getElementById('landpanel').style.display = 'none';
+                document.getElementById('leasepanel').style.display = 'block';
+            }
+            else if (property == 'land')
+            {
+                alert("Land");
+                document.getElementById('leasepanel').style.display = 'none';
+                document.getElementById('landpanel').style.display = 'block';
+            }
+        }
     </script>
 </html>
