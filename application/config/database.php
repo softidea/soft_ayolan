@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'psi_2016_ayolan_ci',
+	'hostname' => '166.62.27.145',
+	'username' => 'deepalsuranga',
+	'password' => 'WelComeDB1129',
+	'database' => 'db_ayolan_soft',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
