@@ -2,12 +2,13 @@
 <html>
 
     <head>
+        <title>User|Registration</title>
         <?php
-        include 'header.php';
+        include 'assets/include/header.php';
         ?>
         <style>
     <?php
-    include 'css/user_registration.css';
+    include 'assets/css/user_registration.css';
     ?>
         </style>
 
@@ -320,7 +321,7 @@
         <script type="text/javascript">
         
         <?php
-                include 'js/customer_registration.js';
+                include 'assets/js/customer_registration.js';
         ?>
         
         </script>
