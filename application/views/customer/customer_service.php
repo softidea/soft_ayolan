@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Service Temp For Customer Search</title>
+        <title>Customer Service</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -104,7 +104,7 @@ and open the template in the editor.
                             <div class="col-sm-6">
                                 <div id="searchOptionPanel">
                                     <fieldset id="account">
-                                        <legend>Service Option</legend>
+                                        <legend>Service Details</legend>
                                         <div class="form-group required">
                                             <label class="control-label" for="input-email">Search by Service:</label>
                                             <select name="cbopayment" id="cboservice" class="form-control" required onchange="check();">
