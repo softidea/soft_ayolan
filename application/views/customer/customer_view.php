@@ -25,6 +25,22 @@ and open the template in the editor.
                 font-family: 'Source Sans Pro', sans-serif;
             }
         </style>
+        <style>
+            #panelheading
+            {
+                background: #004D40;
+                color: white;          
+            }
+            #cviewbuttons
+            {
+                background-color: #004D40;
+                color: white;
+            }
+            #cviewbuttons:hover
+            {
+                background-color: #009688;
+            }
+        </style>
     </head>
     <body>
         <!--Customer Navigation Bar-->
@@ -113,92 +129,99 @@ and open the template in the editor.
                                     </fieldset>
                                 </div>
                             </div>
-                            <div class="col-sm-12">
+
+                            <div class="col-sm-6">
+
                                 <div class="form-group required">
                                     <div class="form-group required">
                                         <label class="control-label" for="input-email">Search Here:</label>
                                         <input type="text" name="fname" id="fname" value="" placeholder="Search Here" id="input-email" class="form-control" required/>
                                     </div>
                                 </div>
+                                <div style="padding-bottom: 8px;">
+                                    <button type="button" id="cviewbuttons" class="btn btn">Search</button>
+                                </div>
                             </div>
+
+
+
                             <div class="col-sm-12">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
-                                            <thead>
-                                                <tr>
-                                                    <th></th>
-                                                    <th>Full Name</th>
-                                                    <th>NIC</th>
-                                                    <th>Permanent Address</th>
-                                                    <th>Phone Number</th>
-                                                    <th>No Services</th>
-                                                    <th>No Guarantors</th>
-                                                    <th>Settled Services</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><input type="checkbox" name=""></td>
-                                                    <td>Malinda Senanayake</td>
-                                                    <td>931781286V</td>
-                                                    <td>Hospital Road,Anuradhapura</td>
-                                                    <td>0774585256</td>
-                                                    <td>2</td>
-                                                    <td>2</td>
-                                                    <td>0</td>
-                                                    <td></td>
-                                                </tr>
-                                               
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Full Name</th>
+                                            <th>NIC</th>
+                                            <th>Permanent Address</th>
+                                            <th>Phone Number</th>
+                                            <th>No Services</th>
+                                            <th>No Settled</th>
+                                            <th style="text-align: center;">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Malinda</td>
+                                            <td>931781258V</td>
+                                            <td>Kandy</td>
+                                            <td>0774585256</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                            <td style="text-align: center;"><button type="button" id="cviewbuttons" class="btn btn">View More</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Malinda</td>
+                                            <td>931781258V</td>
+                                            <td>Kandy</td>
+                                            <td>0774585256</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                            <td style="text-align: center;"><button type="button" id="cviewbuttons" class="btn btn">View More</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Malinda</td>
+                                            <td>931781258V</td>
+                                            <td>Kandy</td>
+                                            <td>0774585256</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                            <td style="text-align: center;"><button type="button" id="cviewbuttons" class="btn btn">View More</button></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Malinda</td>
+                                            <td>931781258V</td>
+                                            <td>Kandy</td>
+                                            <td>0774585256</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                            <td style="text-align: center;"><button type="button" id="cviewbuttons" class="btn btn">View More</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>    
                             </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Customer Panel Section-->
+    </div>
+</div>
+</div>
+<!--Customer Panel Section-->
 
 
-    </body>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="http://bootsnipp.com/dist/scripts.min.js"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <style>
-        #panelheading
-        {
-            background: #004D40;
-            color: white;          
-        }
-        #custcontinue
-        {
-            background-color: #004D40;
-            color: white;
-            float: right;
-        }
-        #custcontinue:hover
-        {
-            background-color: #009688;
-        }
-        //.thcaption{text-align: center;}
-        #backregister
-        {
-            background-color: #004D40;
-            color: white;
-            float: right;
-            margin-right: 12px;
-        }
-        #backregister:hover
-        {
-            background-color: #009688;
-        }
-    </style>
-    <script>
+</body>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="http://bootsnipp.com/dist/scripts.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
                                                 function setServiceOptionPanel()
                                                 {
                                                     var sp_value = document.getElementById('input-search-option').value;
@@ -215,5 +238,5 @@ and open the template in the editor.
                                                         alert(sp_value);
                                                     }
                                                 }
-    </script>
+</script>
 </html>
