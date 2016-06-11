@@ -289,8 +289,8 @@ and open the template in the editor.
                                                 <div class="form" style="float: right;">
 
                                                     <button type="submit"  class="btn btn" id="cservicebtn">Add Installment</button>
-                                                    <button type="submit"  class="btn btn" id="cservicebtn">Add Lease</button>
-                                                    <button type="submit"  class="btn btn" id="cservicebtn">Add Pawn</button>
+                                                    <button type="submit"  class="btn btn" id="cservicebtn">Add New Lease</button>
+                                                    <button type="submit"  class="btn btn" id="cservicebtn">Add New Pawn</button>
                                                     <button type="submit" class="btn btn" id="cservicebtn">Print Report</button>
 
                                                 </div>

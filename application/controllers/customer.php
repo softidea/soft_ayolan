@@ -24,4 +24,12 @@ class Customer extends CI_Controller {
         $this->load->view('customer/customer_penalty');
     }
 
+    public function addlease() {
+        $this->load->view('customer/customer_addlease');
+    }
+
+    public function addpawn() {
+        $this->load->view('customer/customer_addpawn');
+    }
+
 }

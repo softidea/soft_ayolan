@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 list-style-position: outside;
                 list-style-image: none;
             }
-             #cviewbuttons
+            #cviewbuttons
             {
                 background-color: #004D40;
                 color: white;
@@ -42,9 +42,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </style>
     </head>
     <body>
+        <!--Customer Navigation Bar-->
         <div class="container">
             <div class="row">
-                <!--Customer Navigation Bar-->
                 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -492,11 +492,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         </div>
                                         <div class="form-group required">
                                             <label class="control-label" for="input-email">Pawn Rate:</label>
-                                            <input type="text" disabled name="fname" id="fname" value="" placeholder="Lease Rate" id="input-email" class="form-control" required/>
+                                            <input type="text" disabled name="fname" id="fname" value="" placeholder="Pawn Rate" id="input-email" class="form-control" required/>
                                         </div>
                                         <div class="form-group required">
-                                            <label class="control-label" for="input-email">Fix Rate:</label>
-                                            <input type="text" name="fname" id="fname" value="" placeholder="Fix Rate" id="input-email" class="form-control" required/>
+                                            <label class="control-label" for="input-email">Fixed Rate:</label>
+                                            <input type="text" name="fname" id="fname" value="" placeholder="Fixed Rate" id="input-email" class="form-control" required/>
                                         </div>
 
                                         <button type="button" class="btn btn" id="custcontinue" onclick="gotosecond();">Continue</button>
@@ -535,7 +535,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="modal-body">
                         <div class="input-inline">
                             <button type="button" id="cviewbuttons" class="btn btn">New Customer</button>
-                            <button type="button" id="cviewbuttons" class="btn btn">Exiting Customer</button>
+                            <a href="addlease"><button type="button" id="cviewbuttons" class="btn btn">Exiting Customer</button></a>
                         </div>
                         <ul>
                             <li><p style="margin-top: 12px;">New Customer Option can be Used to Create new Customer Account</p></li>
@@ -560,10 +560,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script src="http://bootsnipp.com/dist/scripts.min.js"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <style>
-    body
-    {
-        font-family: 'Source Sans Pro', sans-serif;
-    }
     #panelheading
     {
         background: #004D40;

@@ -19,41 +19,10 @@ and open the template in the editor.
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,700,600italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <style>
-            body
-            {
-                font-family: 'Source Sans Pro', sans-serif;
-            }
-            .modal-backdrop {
-                z-index: -1;
-            }
-            ul {
-                list-style-type: square;
-                list-style-position: outside;
-                list-style-image: none;
-            }
-            #cviewbuttons
-            {
-                background-color: #004D40;
-                color: white;
-                margin-top: 25px;
-            }
-            #cviewbuttons:hover
-            {
-                background-color: #009688;
-            }
-        </style>
+       
     </head>
     <body>
-        <div class="container">
-            <div class="row header" style="text-align:center;color:green">
-                <h3>Bootstrap popups (Responsive)</h3>
-            </div>
-            <div class="row header" style="text-align:center;margin-top:40px;">
-                <a href="#" data-toggle="modal" data-target="#PostCommentsModal">Post Comments</a></br></br>
-                <a href="#" data-toggle="modal" data-target="#LoginModal">Login</a>
-            </div>
-
+       
 
             
     </body>
