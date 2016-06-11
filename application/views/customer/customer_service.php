@@ -24,6 +24,24 @@ and open the template in the editor.
             {
                 font-family: 'Source Sans Pro', sans-serif;
             }
+            .modal-backdrop {
+                z-index: -1;
+            }
+            ul {
+                list-style-type: square;
+                list-style-position: outside;
+                list-style-image: none;
+            }
+            #cviewbuttons
+            {
+                background-color: #004D40;
+                color: white;
+                margin-top: 25px;
+            }
+            #cviewbuttons:hover
+            {
+                background-color: #009688;
+            }
         </style>
     </head>
     <body>
@@ -49,8 +67,8 @@ and open the template in the editor.
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Add a Lease</a></li>
-                                    <li><a href="#">Add a Pawn</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#LoginModal">Add a Lease</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#LoginModal">Add a Pawn</a></li>
                                     <li><a href="#">Pay Installment</a></li>
                                     <li><a href="#">View Service Report</a></li>
                                 </ul>
@@ -289,27 +307,63 @@ and open the template in the editor.
             </div>
         </div>
         <!--Customer Service Panel Ended-->
-    </body>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="http://bootsnipp.com/dist/scripts.min.js"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <style type="text/css">
-        #panelheading
-        {
-            background: #004D40;
-            color: white;          
-        }
-        #cservicebtn
-        {
-            background-color: #004D40;
-            color: white;
-            margin-top: 25px;
-        }
-        #cservicebtn:hover
-        {
-            background-color: #009688;
-        }
-    </style>
+
+
+        <!--Popup Pane of Customers-->
+        <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;
+                            </span><span class="sr-only"> Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Choose Customer</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-inline">
+                            <button type="button" id="cviewbuttons" class="btn btn">New Customer</button>
+                            <button type="button" id="cviewbuttons" class="btn btn">Exiting Customer</button>
+                        </div>
+                        <ul>
+                            <li><p style="margin-top: 12px;">New Customer Option can be Used to Create new Customer Account</p></li>
+                            <li><p>Exiting Customer Option can be used to add services to currently registered customers in the company</p></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" 
+                                class="btn btn-default" data-dismiss="modal">
+                            Close</button>
+                    </div>
+                </div
+            </div>
+        </div>
+    </div>
+
+    <!--Popup Pane of Customers-->
+
+
+
+</body>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="http://bootsnipp.com/dist/scripts.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<style type="text/css">
+    #panelheading
+    {
+        background: #004D40;
+        color: white;          
+    }
+    #cservicebtn
+    {
+        background-color: #004D40;
+        color: white;
+        margin-top: 25px;
+    }
+    #cservicebtn:hover
+    {
+        background-color: #009688;
+    }
+</style>
 </style>
 </html>

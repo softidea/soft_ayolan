@@ -21,6 +21,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             {
                 font-family: 'Source Sans Pro', sans-serif;
             }
+            .modal-backdrop {
+                z-index: -1;
+            }
+            ul {
+                list-style-type: square;
+                list-style-position: outside;
+                list-style-image: none;
+            }
+             #cviewbuttons
+            {
+                background-color: #004D40;
+                color: white;
+                margin-top: 25px;
+            }
+            #cviewbuttons:hover
+            {
+                background-color: #009688;
+            }
         </style>
     </head>
     <body>
@@ -46,8 +64,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Add a Lease</a></li>
-                                    <li><a href="#">Add a Pawn</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#LoginModal">Add a Lease</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#LoginModal">Add a Pawn</a></li>
                                     <li><a href="#">Pay Installment</a></li>
                                     <li><a href="#">View Service Report</a></li>
                                 </ul>
@@ -502,45 +520,79 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </footer>
         <!--Footer Section-->
-    </body>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="http://bootsnipp.com/dist/scripts.min.js"></script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <style>
-        body
-        {
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-        #panelheading
-        {
-            background: #004D40;
-            color: white;          
-        }
-        #custcontinue
-        {
-            background-color: #004D40;
-            color: white;
-            float: right;
-        }
-        #custcontinue:hover
-        {
-            background-color: #009688;
-        }
-        //.thcaption{text-align: center;}
-        #backregister
-        {
-            background-color: #004D40;
-            color: white;
-            float: right;
-            margin-right: 12px;
-        }
-        #backregister:hover
-        {
-            background-color: #009688;
-        }
-    </style>
-    <script>
+
+
+        <!--Popup Pane of Customers-->
+        <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;
+                            </span><span class="sr-only"> Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Choose Customer</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-inline">
+                            <button type="button" id="cviewbuttons" class="btn btn">New Customer</button>
+                            <button type="button" id="cviewbuttons" class="btn btn">Exiting Customer</button>
+                        </div>
+                        <ul>
+                            <li><p style="margin-top: 12px;">New Customer Option can be Used to Create new Customer Account</p></li>
+                            <li><p>Exiting Customer Option can be used to add services to currently registered customers in the company</p></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" 
+                                class="btn btn-default" data-dismiss="modal">
+                            Close</button>
+                    </div>
+                </div
+            </div>
+        </div>
+    </div>
+    <!--Popup Pane of Customers-->
+
+
+</body>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="http://bootsnipp.com/dist/scripts.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<style>
+    body
+    {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    #panelheading
+    {
+        background: #004D40;
+        color: white;          
+    }
+    #custcontinue
+    {
+        background-color: #004D40;
+        color: white;
+        float: right;
+    }
+    #custcontinue:hover
+    {
+        background-color: #009688;
+    }
+    //.thcaption{text-align: center;}
+    #backregister
+    {
+        background-color: #004D40;
+        color: white;
+        float: right;
+        margin-right: 12px;
+    }
+    #backregister:hover
+    {
+        background-color: #009688;
+    }
+</style>
+<script>
                                             function gotosecond()
                                             {
                                                 document.getElementById('one').style.display = "none";
@@ -552,29 +604,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 document.getElementById('second').style.display = "none";
                                             }
 
-    </script>
-    <script>
-        function check()
+</script>
+<script>
+    function check()
+    {
+        var property = document.getElementById('input-region').value;
+        if (property == 'bike')
         {
-            var property = document.getElementById('input-region').value;
-            if (property == 'bike')
-            {
-                alert("Bike");
-                document.getElementById('landpanel').style.display = 'none';
-                document.getElementById('leasepanel').style.display = 'block';
-            }
-            else if (property == 'twheel')
-            {
-                alert("Three-Wheel");
-                document.getElementById('landpanel').style.display = 'none';
-                document.getElementById('leasepanel').style.display = 'block';
-            }
-            else if (property == 'land')
-            {
-                alert("Land");
-                document.getElementById('leasepanel').style.display = 'none';
-                document.getElementById('landpanel').style.display = 'block';
-            }
+            alert("Bike");
+            document.getElementById('landpanel').style.display = 'none';
+            document.getElementById('leasepanel').style.display = 'block';
         }
-    </script>
+        else if (property == 'twheel')
+        {
+            alert("Three-Wheel");
+            document.getElementById('landpanel').style.display = 'none';
+            document.getElementById('leasepanel').style.display = 'block';
+        }
+        else if (property == 'land')
+        {
+            alert("Land");
+            document.getElementById('leasepanel').style.display = 'none';
+            document.getElementById('landpanel').style.display = 'block';
+        }
+    }
+</script>
 </html>

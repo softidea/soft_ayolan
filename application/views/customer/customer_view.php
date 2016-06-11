@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -24,21 +19,28 @@ and open the template in the editor.
             {
                 font-family: 'Source Sans Pro', sans-serif;
             }
-        </style>
-        <style>
-            #panelheading
-            {
-                background: #004D40;
-                color: white;          
+            .modal-backdrop {
+                z-index: -1;
+            }
+            ul {
+                list-style-type: square;
+                list-style-position: outside;
+                list-style-image: none;
             }
             #cviewbuttons
             {
                 background-color: #004D40;
                 color: white;
+                margin-top: 25px;
             }
             #cviewbuttons:hover
             {
                 background-color: #009688;
+            }
+            #panelheading
+            {
+                background: #004D40;
+                color: white;          
             }
         </style>
     </head>
