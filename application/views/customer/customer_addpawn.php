@@ -134,7 +134,10 @@
                                     <div class="form-group required">
                                         <label class="control-label" for="input-email">Customer NIC:</label>
                                         <input type="text" name="fname" id="fname" value="" placeholder="Customer NIC" id="input-email" class="form-control" required/>
-                                        <button type="button" id="cviewbuttons" class="btn btn" style="margin-top: 12px;">Search</button>
+                                    </div>
+                                    <div class="form-inline required" style="margin-bottom: 8px;">
+                                        <button type="button" id="cviewbuttons" class="btn btn">Search</button>
+                                        <button type="button" id="cviewbuttons" class="btn btn">New Customer</button>
                                     </div>
                                     <div class="form-group required">
                                         <label class="control-label" for="input-email">Upload Customer:</label>
@@ -158,23 +161,23 @@
                                         <input type="text" name="fname" id="fname" value="" placeholder="Registration Date" id="input-email" class="form-control" required/>
                                     </div>
                                     <div class="form-group required">
-                                            <label class="control-label" for="input-email">Select Period:</label>
-                                            <select name="cbopayment" id="input-region" class="form-control" required>
-                                                <option value=""> --- Please Select --- </option>
-                                                <option>6 Months</option>
-                                                <option>1 Year</option>
-                                                <option>2 Year</option>
-                                                <option>3 Year</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group required">
-                                            <label class="control-label" for="input-email">Pawn Rate:</label>
-                                            <input type="text" disabled name="fname" id="fname" value="" placeholder="Pawn Rate" id="input-email" class="form-control" required/>
-                                        </div>
-                                        <div class="form-group required">
-                                            <label class="control-label" for="input-email">Fixed Rate:</label>
-                                            <input type="text" name="fname" id="fname" value="" placeholder="Fixed Rate" id="input-email" class="form-control" required/>
-                                        </div>
+                                        <label class="control-label" for="input-email">Select Period:</label>
+                                        <select name="cbopayment" id="input-region" class="form-control" required>
+                                            <option value=""> --- Please Select --- </option>
+                                            <option>6 Months</option>
+                                            <option>1 Year</option>
+                                            <option>2 Year</option>
+                                            <option>3 Year</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label class="control-label" for="input-email">Pawn Rate:</label>
+                                        <input type="text" disabled name="fname" id="fname" value="" placeholder="Pawn Rate" id="input-email" class="form-control" required/>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label class="control-label" for="input-email">Fixed Rate:</label>
+                                        <input type="text" name="fname" id="fname" value="" placeholder="Fixed Rate" id="input-email" class="form-control" required/>
+                                    </div>
                                     <button type="button" class="btn btn" id="custcontinue">Register Pawn</button>
                                 </fieldset>
                             </div>

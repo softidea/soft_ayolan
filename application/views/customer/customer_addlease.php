@@ -134,7 +134,11 @@
                                     <div class="form-group required">
                                         <label class="control-label" for="input-email">Customer NIC:</label>
                                         <input type="text" name="fname" id="fname" value="" placeholder="Customer NIC" id="input-email" class="form-control" required/>
-                                        <button type="button" id="cviewbuttons" class="btn btn" style="margin-top: 12px;">Search</button>
+
+                                    </div>
+                                    <div class="form-inline required" style="margin-bottom: 8px;">
+                                        <button type="button" id="cviewbuttons" class="btn btn">Search</button>
+                                        <button type="button" id="cviewbuttons" class="btn btn">New Customer</button>
                                     </div>
                                     <div class="form-group required">
                                         <label class="control-label" for="input-email">Upload Customer:</label>

@@ -31,5 +31,8 @@ class Customer extends CI_Controller {
     public function addpawn() {
         $this->load->view('customer/customer_addpawn');
     }
+    public function serviceview(){
+         $this->load->view('customer/customer_serviceview');
+    }
 
 }
