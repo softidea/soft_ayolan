@@ -96,7 +96,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="panel-heading" id="panelheading">
                             <h3 class="panel-title">Customer Registration</h3>
                         </div>
-                        <div class="panel-body">
+                        <div class="panel-body" style="background-color: #E8F5E9;">
                             <div class="col-sm-6">
                                 <fieldset id="account">
                                     <legend>01.Customer Personal Details</legend>
@@ -405,7 +405,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="panel-heading" id="panelheading">
                             <h3 class="panel-title">Property Information</h3>
                         </div>
-                        <div class="panel-body">
+                        <div class="panel-body" >
                             <div class="col-sm-6">
                                 <fieldset id="account"><td>
                                     <legend>Property Details</legend>

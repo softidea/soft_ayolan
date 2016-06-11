@@ -44,6 +44,16 @@
                 background: #004D40;
                 color: white;          
             }
+            #cservicebtn
+            {
+                background-color: #004D40;
+                color: white;
+                margin-top: 12px;
+            }
+            #cservicebtn:hover
+            {
+                background-color: #009688;
+            }
             #custcontinue
             {
                 background-color: #004D40;
@@ -216,62 +226,46 @@
                                             <table class="table table-bordered table-striped">
                                                 <thead>
                                                     <tr>
-                                                        <th>Term No</th>
-                                                        <th>Date</th>
+                                                        <th>#</th>
+                                                        <th>Service No</th>
+                                                        <th>Reg Date</th>
+                                                        <th>Service</th>
+                                                        <th>Service Rental</th>
+                                                        <th>Service Period</th>
                                                         <th>Installment</th>
-                                                        <th>Payment</th>
-                                                        <th>Customer Due</th>
-                                                        <th>Company Due</th>
+                                                        <th>Status</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
+                                                        <th><input type="radio" name="check"></th>
                                                         <th scope="row">1</th>
                                                         <td>2016/01/10</td>
+                                                        <td>Vehicle Lease</td>
+                                                        <td>40000.00</td>
+                                                        <td>18 Months</td>
                                                         <td>2000.00</td>
+                                                        <td>Active</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><input type="radio" name="check"></th>
+                                                        <th scope="row">1</th>
+                                                        <td>2016/01/10</td>
+                                                        <td>Vehicle Lease</td>
+                                                        <td>40000.00</td>
+                                                        <td>18 Months</td>
                                                         <td>2000.00</td>
-                                                        <td>00.00</td>
-                                                        <td>00.00</td>
+                                                        <td>Active</td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>2016/02/10</td>
+                                                        <th><input type="radio" name="check"></th>
+                                                        <th scope="row">1</th>
+                                                        <td>2016/01/10</td>
+                                                        <td>Vehicle Lease</td>
+                                                        <td>40000.00</td>
+                                                        <td>18 Months</td>
                                                         <td>2000.00</td>
-                                                        <td>1000.00</td>
-                                                        <td>1000.00</td>
-                                                        <td>00.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>2016/03/10</td>
-                                                        <td>2000.00</td>
-                                                        <td>3000.00</td>
-                                                        <td>00.00</td>
-                                                        <td>1000.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">5</th>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">6</th>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
+                                                        <td>Active</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -279,20 +273,20 @@
                                         <div class="col-sm-6">
                                             <div class="form-group required">
                                                 <div class="form-group required">
-                                                    <label class="control-label" for="input-email">Payable Rental:</label>
-                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Installment" id="input-email" class="form-control" required/>
+                                                    <label class="control-label" for="input-email">Total Paid Installments:</label>
+                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Total Due Installments" id="input-email" class="form-control" required/>
                                                 </div>
                                             </div>
                                             <div class="form-group required">
                                                 <div class="form-group required">
-                                                    <label class="control-label" for="input-email">Total Paid Installments:</label>
-                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Installment" id="input-email" class="form-control" required/>
+                                                    <label class="control-label" for="input-email">Total Due Installments:</label>
+                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Total Due Installments" id="input-email" class="form-control" required/>
                                                 </div>
                                             </div>
                                             <div class="form-group required">
                                                 <div class="form-group required">
                                                     <label class="control-label" for="input-email">Total Customer Due:</label>
-                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Installment" id="input-email" class="form-control" required/>
+                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Total Customer Due" id="input-email" class="form-control" required/>
                                                 </div>
                                             </div>
                                         </div>
@@ -301,13 +295,19 @@
                                             <div class="form-group required">
                                                 <div class="form-group required">
                                                     <label class="control-label" for="input-email">Total Company Due:</label>
-                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Installment" id="input-email" class="form-control" required/>
+                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Total Company Due" id="input-email" class="form-control" required/>
                                                 </div>
                                             </div>
                                             <div class="form-group required">
                                                 <div class="form-group required">
                                                     <label class="control-label" for="input-email">Total Payable:</label>
-                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Installment" id="input-email" class="form-control" required/>
+                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Total Payable" id="input-email" class="form-control" required/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group required">
+                                                <div class="form-group required">
+                                                    <label class="control-label" for="input-email">Next Installment:</label>
+                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Next Installment" id="input-email" class="form-control" required/>
                                                 </div>
                                             </div>
                                             <div class="form-inline">
@@ -324,17 +324,17 @@
                                     </div>
                                 </div>
                             </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-                            <!--Customer Service Loader-->
+        </div>
+        <!--Customer Service Loader-->
 
 
-                            </body>
-                            <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-                            <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-                            <script src="http://bootsnipp.com/dist/scripts.min.js"></script>
-                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                            </html>
+    </body>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="http://bootsnipp.com/dist/scripts.min.js"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</html>
