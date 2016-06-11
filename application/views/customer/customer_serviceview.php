@@ -133,7 +133,7 @@
                         <div class="panel-heading" id="panelheading">
                             <h3 class="panel-title">Customer Service Information</h3>
                         </div>
-                        <div class="panel-body" style="background-color: #E8F5E9;">
+                        <div class="panel-body" style="background-color: #FAFAFA;">
                             <div class="col-sm-6">
                                 <fieldset id="account">
                                     <legend>Search Option-01</legend>
