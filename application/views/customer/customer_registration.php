@@ -499,7 +499,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <input type="text" name="fname" id="fname" value="" placeholder="Fixed Rate" id="input-email" class="form-control" required/>
                                         </div>
 
-                                        <button type="button" class="btn btn" id="custcontinue" onclick="gotosecond();">Continue</button>
+                                        <button type="button" class="btn btn" id="custcontinue" onclick="gotosecond();">Update</button>
                                         <button type="button" class="btn btn" id="backregister" onclick="gotoone();">Back</button>
                                     </fieldset>
                                 </div>

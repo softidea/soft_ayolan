@@ -16,4 +16,15 @@ class Admin extends CI_Controller {
         $this->load->view('admin/admin_settings');
     }
 
+    public function customer($method) {
+        
+        if ($method=="update") {
+            $this->load->view('admin/customer/updateinfo');
+        }
+        if ($method=="service") {
+             $this->load->view('admin/customer/updateservice');
+        }
+    }
+   
+
 }
