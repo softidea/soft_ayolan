@@ -41,7 +41,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </nav>
 
         <div class="container">
-            <nav class="navbar navbar-default"  style="background: #004D40;color: white;" >
+            <nav class="navbar navbar-default"  style="background: #009688;color: white;" >
                 <div class="navbar-header">
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -60,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <li class="dropdown mega-dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: white;">Collection<span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
 
-                            <ul class="dropdown-menu mega-dropdown-menu row">
+                            <ul class="dropdown-menu mega-dropdown-menu row" style="background-color: #F5F5F5;">
                                 <li class="col-sm-3">
                                     <ul>
                                         <li class="dropdown-header" style="color: #004D40;">Leasing Services</li>                            
@@ -218,12 +218,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
             <!--Process Div Panel Set-->
-
-
-
-
-
-
 
 
         </div>

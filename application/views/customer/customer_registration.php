@@ -53,21 +53,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Customer Information</a>
+                        <a class="navbar-brand" href="#">Ayolan Investments</a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Register</a></li>
-                            <li><a href="#">Update</a></li>
-                            <li><a href="#">View</a></li>
-
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">New Registration</a></li>
+                                    <li><a href="#">Update Customer</a></li>
+                                    <li><a href="#">View Customers</a></li>
+                                    <li><a href="#">Add Installment</a></li>
+                                </ul>
+                            </li>
+                             
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#" data-toggle="modal" data-target="#LoginModal">Add a Lease</a></li>
                                     <li><a href="#" data-toggle="modal" data-target="#LoginModal">Add a Pawn</a></li>
+                                    <li><a href="#">View Services</a></li>
+                                    <li><a href="#">View Services</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installment<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
                                     <li><a href="#">Pay Installment</a></li>
-                                    <li><a href="#">View Service Report</a></li>
+                                    <li><a href="#">Add a Pawn</a></li>
+                                    <li><a href="#">View Services</a></li>
+                                    <li><a href="#">View Services</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Account</a></li>
@@ -96,7 +111,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="panel-heading" id="panelheading">
                             <h3 class="panel-title">Customer Registration</h3>
                         </div>
-                        <div class="panel-body" style="background-color: #E8F5E9;">
+                        <div class="panel-body" style="background-color: #FAFAFA;">
                             <div class="col-sm-6">
                                 <fieldset id="account">
                                     <legend>01.Customer Personal Details</legend>
@@ -562,30 +577,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <style>
     #panelheading
     {
-        background: #004D40;
+        background: #009688;
         color: white;          
     }
     #custcontinue
     {
-        background-color: #004D40;
+        background-color: #009688;
         color: white;
         float: right;
     }
     #custcontinue:hover
     {
-        background-color: #009688;
+        background-color: #004D40;
     }
     //.thcaption{text-align: center;}
     #backregister
     {
-        background-color: #004D40;
+        background-color: #009688;
         color: white;
         float: right;
         margin-right: 12px;
     }
     #backregister:hover
     {
-        background-color: #009688;
+        background-color: #004D40;
     }
 </style>
 <script>
