@@ -15,7 +15,6 @@ class Admin extends CI_Controller {
     public function settings() {
         $this->load->view('admin/admin_settings');
     }
-
     public function customer($method) {
         
         if ($method=="update") {
@@ -24,6 +23,7 @@ class Admin extends CI_Controller {
         if ($method=="service") {
              $this->load->view('admin/customer/updateservice');
         }
+       
     }
    
 

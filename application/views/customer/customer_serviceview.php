@@ -46,13 +46,13 @@
             }
             #cservicebtn
             {
-                background-color: #004D40;
+                background-color: #009688;
                 color: white;
                 margin-top: 12px;
             }
             #cservicebtn:hover
             {
-                background-color: #009688;
+                background-color: #004D40;
             }
             #custcontinue
             {
@@ -314,10 +314,10 @@
                                                 <div class="form" style="float: right;">
 
                                                     <button type="submit"  class="btn btn" id="cservicebtn">Add Installment</button>
+                                                    <button type="submit"  class="btn btn" id="cservicebtn">View Installment</button>
                                                     <button type="submit"  class="btn btn" id="cservicebtn">Add New Lease</button>
                                                     <button type="submit"  class="btn btn" id="cservicebtn">Add New Pawn</button>
-                                                    <button type="submit" class="btn btn" id="cservicebtn">Print Report</button>
-
+                                             
                                                 </div>
                                             </div>
                                         </div>
