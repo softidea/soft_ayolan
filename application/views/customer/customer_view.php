@@ -42,55 +42,19 @@
                 background: #009688;
                 color: white;          
             }
+            #cservicebtn
+            {
+                background-color: #009688;
+                color: white;
+            }
+            #cservicebtn:hover
+            {
+                background-color: #004D40;
+            }
         </style>
     </head>
     <body>
-        <!--Customer Navigation Bar-->
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Customer Information</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Register</a></li>
-                            <li><a href="#">Update</a></li>
-                            <li><a href="#">View</a></li>
-
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Add a Lease</a></li>
-                                    <li><a href="#">Add a Pawn</a></li>
-                                    <li><a href="#">Pay Installment</a></li>
-                                    <li><a href="#">View Service Report</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Account</a></li>
-                        </ul>
-                        <div class="col-sm-3 col-md-3 pull-right">
-                            <form class="navbar-form" role="search">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search" name="q">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>        
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!--Customer Navigation Bar-->
-
+        <?php include 'assets/include/navigation_bar.php'; ?>
         <!--Customer Panel Section-->
         <div class="container" style="margin-top: 80px;display: block;" id="one">
             <div class="row">
@@ -208,7 +172,7 @@
                             <div class="col-sm-6">
                                 <div class="form-inline">
                                     <button type="submit"  class="btn btn" id="cservicebtn">Save as PDF</button>
-                                     <button type="submit"  class="btn btn" id="cservicebtn">Print</button>
+                                    <button type="submit"  class="btn btn" id="cservicebtn">Print</button>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +185,7 @@
 </div>
 <!--Customer Panel Section-->
 
-
+<?php include 'assets/include/footer.php';?>
 </body>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

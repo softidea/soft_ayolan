@@ -42,77 +42,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </style>
     </head>
     <body>
-        <!--Customer Navigation Bar-->
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Ayolan Investments</a>
-                        
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="<?php echo base_url('user/home');?>" style="text-decoration: none;">Home</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">New Registration</a></li>
-                                    <li><a href="#">Update Customer</a></li>
-                                    <li><a href="#">View Customers</a></li>
-                                    <li><a href="#">Add Installment</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#" data-toggle="modal" data-target="#LoginModal">Add a Lease</a></li>
-                                    <li><a href="#" data-toggle="modal" data-target="#LoginModal">Add a Pawn</a></li>
-                                    <li><a href="#">View Services</a></li>
-                                    <li><a href="#">View Services</a></li>
-                                    <li><a href="#">Settle Service</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installments<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Pay Installment</a></li>
-                                    <li><a href="#">View Installment</a></li>
-                                    <li><a href="#">Update Installment</a></li>
-                                    <li><a href="#">Settle Service</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Customer Report</a></li>
-                                    <li><a href="#">Service Report</a></li>
-                                    <li><a href="#">Installment Report</a></li>
-                                    <li><a href="#">Service Settle Report</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="col-sm-3 col-md-3 pull-right">
-                            <form class="navbar-form" role="search">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search" name="q">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>        
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!--Customer Navigation Bar-->
+        <?php include 'assets/include/navigation_bar.php'; ?>
 
         <!--Customer Panel Section-->
         <div class="container" style="margin-top: 80px;display: block;" id="one">
@@ -578,7 +508,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <!--Popup Pane of Customers-->
-
+<?php include 'assets/include/footer.php';?>
 
 </body>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>

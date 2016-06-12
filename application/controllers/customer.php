@@ -34,8 +34,5 @@ class Customer extends CI_Controller {
     public function serviceview(){
          $this->load->view('customer/customer_serviceview');
     }
-    public function search() {
-        $this->load->view('customer/customer_view');
-    }
    
 }

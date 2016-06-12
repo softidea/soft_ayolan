@@ -124,8 +124,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 <label class="sr-only" for="email">Name | ID</label>
                                                 <input type="email" class="form-control" id="email" placeholder="Name | ID | Service No">                                                              
                                             </div>
-                                            <a href="<?php echo base_url('customer/search'); ?>" style="text-decoration: none;color: white;">
-                                                <button type="submit" class="btn btn btn-block" style="background-color: #009688;color: white;">Search
+                                            <a href="<?php echo base_url('customer'); ?>" style="text-decoration: none;color: white;">
+                                                <button type="button" class="btn btn btn-block" style="background-color: #009688;color: white;">Search
                                                 </button>
                                             </a>
                                         </form>  
@@ -222,11 +222,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
                                                                 </div>
-                                                                <footer class="navbar-default navbar-fixed-bottom">
-                                                                    <div class="container-fluid" style="text-align: center;">
-                                                                        <span>Copyright © <a href="#" id="footer-caption">Softidea Solutions - 2016</a></span>
-                                                                    </div>
-                                                                </footer>
+                                                                <?php include 'assets/include/footer.php'; ?>
                                                                 </body>
                                                                 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
                                                                 <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

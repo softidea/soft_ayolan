@@ -55,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <label class="control-label" for="input-password">Password :</label>
                                         <input type="password" name="password" placeholder="Password" id="input-password" class="form-control" required/>
                                         <a href="#"><p id="para_forget">Did you forgot your password?</p></a></div>
-                                    <input type="submit" name="login_process" value="Login Here" class="btn" id='btn_login'/>
+                                    <a href="<?php echo base_url('user/home'); ?>"><input type="button" name="login_process" value="Login Here" class="btn" id='btn_login'/></a>
                                     <input type="button" name="login_process" value="Register User" class="btn" id='btn_login' onclick="setregpanel();"/>
                                 </form>
                             </div>
@@ -122,18 +122,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!--Container Panel Start-->
 
 
-
-
-
-
-        <!--Footer Section Opened-->
-        <!--Footer Section Opened-->
-        <footer class="navbar-default navbar-fixed-bottom">
-            <div class="container-fluid" style="text-align: center;">
-                <span>Copyright © <a href="#" id="footer-caption">Softidea Solutions - 2016</a></span>
-            </div>
-        </footer>
-        <!--Footer section closed--><!--Footer section closed-->
+<?php include 'assets/footer.php';?>
 
 
     </body>
