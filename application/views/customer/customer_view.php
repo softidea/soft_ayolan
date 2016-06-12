@@ -29,17 +29,17 @@
             }
             #cviewbuttons
             {
-                background-color: #004D40;
+                background-color: #009688;
                 color: white;
                 margin-top: 25px;
             }
             #cviewbuttons:hover
             {
-                background-color: #009688;
+                background-color: #004D40;
             }
             #panelheading
             {
-                background: #004D40;
+                background: #009688;
                 color: white;          
             }
         </style>
@@ -99,7 +99,7 @@
                         <div class="panel-heading" id="panelheading">
                             <h3 class="panel-title">Customer Information</h3>
                         </div>
-                        <div class="panel-body">
+                        <div class="panel-body" style="background-color: #FAFAFA;">
                             <div class="col-sm-6">
                                 <fieldset id="account">
                                     <legend>Search Option</legend>
@@ -205,8 +205,11 @@
                                     </tbody>
                                 </table>    
                             </div>
-
-
+                            <div class="col-sm-6">
+                                <div class="form-inline">
+                                    <button type="submit"  class="btn btn" id="cservicebtn">Print</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

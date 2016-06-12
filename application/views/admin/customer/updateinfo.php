@@ -31,13 +31,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             }
             #cviewbuttons
             {
-                background-color: #004D40;
+                background-color: #009688;
                 color: white;
                 margin-top: 25px;
             }
             #cviewbuttons:hover
             {
+                background-color: #004D40;
+            }
+            #panelheading
+            {
+                background: #009688;
+                color: white;          
+            }
+            #custcontinue
+            {
                 background-color: #009688;
+                color: white;
+                float: right;
+            }
+            #custcontinue:hover
+            {
+                background-color: #004D40;
+            }
+            //.thcaption{text-align: center;}
+            #backregister
+            {
+                background-color: #009688;
+                color: white;
+                float: right;
+                margin-right: 12px;
+            }
+            #backregister:hover
+            {
+                background-color: #004D40;
             }
         </style>
     </head>
@@ -94,9 +121,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading" id="panelheading">
-                            <h3 class="panel-title">Customer Registration</h3>
+                            <h3 class="panel-title">Customer Information Update</h3>
                         </div>
-                        <div class="panel-body" style="background-color: #E8F5E9;">
+                        <div class="panel-body" style="background-color: #FAFAFA;">
                             <div class="col-sm-6">
                                 <fieldset id="account">
                                     <legend>01.Customer Personal Details</legend>
@@ -387,7 +414,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                             <div class="col-md-12">
 
-                                <button type="button" class="btn btn" id="custcontinue" onclick="gotosecond();">Update Details</button>
+                                <button type="button" class="btn btn" id="custcontinue" onclick="">Update Details</button>
                             </div>
                         </div>
                     </div>
@@ -443,46 +470,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="http://bootsnipp.com/dist/scripts.min.js"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<style>
-    #panelheading
-    {
-        background: #004D40;
-        color: white;          
-    }
-    #custcontinue
-    {
-        background-color: #004D40;
-        color: white;
-        float: right;
-    }
-    #custcontinue:hover
-    {
-        background-color: #009688;
-    }
-    //.thcaption{text-align: center;}
-    #backregister
-    {
-        background-color: #004D40;
-        color: white;
-        float: right;
-        margin-right: 12px;
-    }
-    #backregister:hover
-    {
-        background-color: #009688;
-    }
-</style>
+
 <script>
-                                            function gotosecond()
-                                            {
-                                                document.getElementById('one').style.display = "none";
-                                                document.getElementById('second').style.display = "block";
-                                            }
-                                            function gotoone()
-                                            {
-                                                document.getElementById('one').style.display = "block";
-                                                document.getElementById('second').style.display = "none";
-                                            }
+    function gotosecond()
+    {
+        document.getElementById('one').style.display = "none";
+        document.getElementById('second').style.display = "block";
+    }
+    function gotoone()
+    {
+        document.getElementById('one').style.display = "block";
+        document.getElementById('second').style.display = "none";
+    }
 
 </script>
 <script>

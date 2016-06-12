@@ -55,13 +55,13 @@
             }
             #custcontinue
             {
-                background-color: #004D40;
+                background-color: #009688;
                 color: white;
                 float: right;
             }
             #custcontinue:hover
             {
-                background-color: #009688;
+                background-color: #004D40;
             }
             //.thcaption{text-align: center;}
             #backregister
@@ -322,7 +322,7 @@
                                                     <div id="home" class="tab-pane fade in active">
                                                         <h3>Add New Installment Here</h3>
                                                         <p>New Installment available for the current service , Please add new installment</p>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="form-group required">
                                                                 <div class="form-group required">
                                                                     <label class="control-label" for="input-email">Payable Installment:</label>
@@ -331,11 +331,19 @@
                                                             </div>
                                                             <button type="submit"  class="btn btn" id="cservicebtn">Add Installment</button>
                                                         </div>
-                                                        <div class="col-sm-4">
+                                                        <div class="col-sm-3">
                                                             <div class="form-group required">
                                                                 <div class="form-group required">
                                                                     <label class="control-label" for="input-email">Payment:</label>
                                                                     <input type="text" name="fname" id="fname" value="00.00" placeholder="Payment" id="input-email" class="form-control" required/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                            <div class="form-group required">
+                                                                <div class="form-group required">
+                                                                    <label class="control-label" for="input-email">Paid Date:</label>
+                                                                    <input type="text" name="fname" id="fname" value="2016-10-25" placeholder="Payment" id="input-email" class="form-control" required/>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -452,7 +460,12 @@
                                                 </div>
                                             </div>
                                         </div>
-
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <button type="button" class="btn btn" id="custcontinue" onclick="">Print</button>
+                                                <button type="button" class="btn btn" id="custcontinue" onclick="" style="margin-right: 8px;">Save as PDF</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

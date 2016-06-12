@@ -34,13 +34,36 @@ and open the template in the editor.
             }
             #cviewbuttons
             {
-                background-color: #004D40;
+                background-color: #009688;
                 color: white;
                 margin-top: 25px;
             }
             #cviewbuttons:hover
             {
+                background-color: #004D40;
+            }
+            #panelheading
+            {
+                background: #009688;
+                color: white;          
+            }
+            #cservicebtn
+            {
                 background-color: #009688;
+                color: white;
+                margin-top: 25px;
+            }
+            #cservicebtn:hover
+            {
+                background-color: #004D40;
+            }
+            #custcontinue{
+                background-color: #009688;
+                color: white;
+                
+            }
+            #custcontinue:hover{
+                background-color: #004D40;
             }
         </style>
     </head>
@@ -92,254 +115,162 @@ and open the template in the editor.
         <!--Customer Navigation Bar-->
 
 
+        <!--Property Panel Section-->
 
-        <!--Customer Service Panel Started-->
-        <div class="container" style="margin-top: 80px;display: block;" id="one">
+        <div class="container" style="margin-top: 80px;display: block;">
             <div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading" id="panelheading">
-                            <h3 class="panel-title">Customer Service Information</h3>
+                            <h3 class="panel-title">New Service Registration</h3>
                         </div>
-                        <div class="panel-body">
+                        <div class="panel-body" style="background: #FAFAFA;">
                             <div class="col-sm-6">
-                                <fieldset id="account">
+                                <fieldset id="account"><td>
                                     <legend>Customer Details</legend>
                                     <div class="form-group required">
-                                        <div class="form-group required">
-                                            <label class="control-label" for="input-email">Customer Name:</label>
-                                            <input type="text" disabled name="fname" id="fname" value="Malinda Senanayake" placeholder="Customer Full Name" id="input-email" class="form-control" required/>
-                                        </div>
+                                        <label class="control-label" for="input-email">Reference Person:</label>
+                                        <input type="text" name="fname" id="fname" value="" placeholder="Reference Person" id="input-email" class="form-control" required/>
                                     </div>
                                     <div class="form-group required">
-                                        <div class="form-group required">
-                                            <label class="control-label" for="input-email">Customer NIC:</label>
-                                            <input type="text" disabled name="fname" id="fname" value="931781285V" placeholder="Customer Full Name" id="input-email" class="form-control" required/>
-                                        </div>
+                                        <label class="control-label" for="input-email">Select Property:</label>
+                                        <select name="cbopayment" id="input-region" class="form-control" required onchange="check();">
+                                            <option value=""> --- Please Select --- </option>
+                                            <option value="bike">Bike</option>
+                                            <option value="twheel">Three-Wheel</option>
+                                            <option value="land">Land</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label class="control-label" for="input-email">Upload Customer:</label>
+                                        <input type="file" name="product_image" required/>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label class="control-label" for="input-email">Upload Property:</label>
+                                        <input type="file" name="product_image" required/>
                                     </div>
                                 </fieldset>
+
                             </div>
                             <div class="col-sm-6">
-                                <div id="searchOptionPanel">
-                                    <fieldset id="account">
-                                        <legend>Service Details</legend>
+                                <div id="leasepanel">
+                                    <fieldset id="account"><td>
+                                        <legend>Leasing Details</legend>
                                         <div class="form-group required">
-                                            <label class="control-label" for="input-email">Search by Service:</label>
-                                            <select name="cbopayment" id="cboservice" class="form-control" required onchange="check();">
+                                            <label class="control-label" for="input-email">Vehicle Number:</label>
+                                            <input type="text" name="fname" id="fname" value="" placeholder="Vehicle Number" id="input-email" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Model Year:</label>
+                                            <input type="text" disabled name="fname" id="fname" value="" placeholder="Model Year" id="input-email" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Lease Rate:</label>
+                                            <input type="text" disabled name="fname" id="fname" value="" placeholder="Lease Rate" id="input-email" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Fix Rate:</label>
+                                            <input type="text" name="fname" id="fname" value="" placeholder="Fix Rate" id="input-email" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Select Period:</label>
+                                            <select name="cbopayment" id="input-region" class="form-control" required>
                                                 <option value=""> --- Please Select --- </option>
-                                                <option value="bike">TVS Bike Lease</option>
-                                                <option value="twheel">Maharagama Land Pawn</option>
-                                                <option value="land">Bajaj Bike Lease</option>
+                                                <option>6 Months</option>
+                                                <option>1 Year</option>
+                                                <option>2 Year</option>
+                                                <option>3 Year</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="btn btn" id="custcontinue" onclick="">Continue</button>
+                                    </fieldset>
+                                </div>
+
+                                <!--Property Land Panel-->
+                                <div id="landpanel" style="display: none;">
+                                    <fieldset id="account"><td>
+                                        <legend>Land Pawning Details</legend>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Deed Number:</label>
+                                            <input type="text" name="fname" id="fname" value="" placeholder="Deed Number" id="input-email" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Registration Year:</label>
+                                            <input type="text" name="fname" id="fname" value="" placeholder="Registration Year" id="input-email" class="form-control" required/>
+                                        </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Select Period:</label>
+                                            <select name="cbopayment" id="input-region" class="form-control" required>
+                                                <option value=""> --- Please Select --- </option>
+                                                <option>6 Months</option>
+                                                <option>1 Year</option>
+                                                <option>2 Year</option>
+                                                <option>3 Year</option>
                                             </select>
                                         </div>
                                         <div class="form-group required">
-                                            <div class="form-group required">
-                                                <label class="control-label" for="input-email">Search Service:</label>
-                                                <input type="text" name="fname" id="fname" value="" placeholder="Enter Service Here" id="input-email" class="form-control" required/>
-                                            </div>
+                                            <label class="control-label" for="input-email">Pawn Rate:</label>
+                                            <input type="text" disabled name="fname" id="fname" value="" placeholder="Pawn Rate" id="input-email" class="form-control" required/>
                                         </div>
+                                        <div class="form-group required">
+                                            <label class="control-label" for="input-email">Fixed Rate:</label>
+                                            <input type="text" name="fname" id="fname" value="" placeholder="Fixed Rate" id="input-email" class="form-control" required/>
+                                        </div>
+
+                                        <button type="button" class="btn btn" id="custcontinue" onclick="">Update</button>
+                                        
                                     </fieldset>
                                 </div>
+                                <!--Property Land Panel-->
                             </div>
-
-
-                            <!--Customer Service Loader-->
-                            <div class="col-sm-12">
-                                <div class="panel panel-default">
-                                    <div class="panel-body">
-                                        <div class="col-sm-6">
-                                            <div class="form-group required">
-                                                <div class="form-group required">
-                                                    <label class="control-label" for="input-email">Service No:</label>
-                                                    <input type="text" name="fname" id="fname" value="" placeholder="Service No" id="input-email" class="form-control" required/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group required">
-                                                <div class="form-group required">
-                                                    <label class="control-label" for="input-email">Service Date:</label>
-                                                    <input type="text" name="fname" id="fname" value="" placeholder="Service Date" id="input-email" class="form-control" required/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group required">
-                                                <div class="form-group required">
-                                                    <label class="control-label" for="input-email">Service:</label>
-                                                    <input type="text" name="fname" id="fname" value="" placeholder="Service" id="input-email" class="form-control" required/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group required">
-                                                <div class="form-group required">
-                                                    <label class="control-label" for="input-email">Service Rental:</label>
-                                                    <input type="text" name="fname" id="fname" value="" placeholder="Service Rental" id="input-email" class="form-control" required/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group required">
-                                                <div class="form-group required">
-                                                    <label class="control-label" for="input-email">Service Period:</label>
-                                                    <input type="text" name="fname" id="fname" value="" placeholder="Service Period" id="input-email" class="form-control" required/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group required">
-                                                <div class="form-group required">
-                                                    <label class="control-label" for="input-email">Installment:</label>
-                                                    <input type="text" name="fname" id="fname" value="" placeholder="Installment" id="input-email" class="form-control" required/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <table class="table table-bordered table-striped">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Term No</th>
-                                                        <th>Date</th>
-                                                        <th>Installment</th>
-                                                        <th>Payment</th>
-                                                        <th>Customer Due</th>
-                                                        <th>Company Due</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>2016/01/10</td>
-                                                        <td>2000.00</td>
-                                                        <td>2000.00</td>
-                                                        <td>00.00</td>
-                                                        <td>00.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>2016/02/10</td>
-                                                        <td>2000.00</td>
-                                                        <td>1000.00</td>
-                                                        <td>1000.00</td>
-                                                        <td>00.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>2016/03/10</td>
-                                                        <td>2000.00</td>
-                                                        <td>3000.00</td>
-                                                        <td>00.00</td>
-                                                        <td>1000.00</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">5</th>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">6</th>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group required">
-                                                <div class="form-group required">
-                                                    <label class="control-label" for="input-email">Payable Rental:</label>
-                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Installment" id="input-email" class="form-control" required/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group required">
-                                                <div class="form-group required">
-                                                    <label class="control-label" for="input-email">Total Paid Installments:</label>
-                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Installment" id="input-email" class="form-control" required/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group required">
-                                                <div class="form-group required">
-                                                    <label class="control-label" for="input-email">Total Customer Due:</label>
-                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Installment" id="input-email" class="form-control" required/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-
-                                            <div class="form-group required">
-                                                <div class="form-group required">
-                                                    <label class="control-label" for="input-email">Total Company Due:</label>
-                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Installment" id="input-email" class="form-control" required/>
-                                                </div>
-                                            </div>
-                                            <div class="form-group required">
-                                                <div class="form-group required">
-                                                    <label class="control-label" for="input-email">Total Payable:</label>
-                                                    <input type="text" disabled name="fname" id="fname" value="" placeholder="Installment" id="input-email" class="form-control" required/>
-                                                </div>
-                                            </div>
-                                            <div class="form-inline">
-                                                <div class="form" style="float: right;">
-
-                                                    <button type="submit"  class="btn btn" id="cservicebtn">Add Installment</button>
-                                                    <button type="submit"  class="btn btn" id="cservicebtn">Add New Lease</button>
-                                                    <button type="submit"  class="btn btn" id="cservicebtn">Add New Pawn</button>
-                                                    <button type="submit" class="btn btn" id="cservicebtn">Print Report</button>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Customer Service Loader-->
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Customer Service Panel Ended-->
 
+        <!--Property Panel Section-->
+        <!--Customer Service Loader-->
 
-        <!--Popup Pane of Customers-->
-        <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">
-                            <span aria-hidden="true">&times;
-                            </span><span class="sr-only"> Close</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Choose Customer</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="input-inline">
-                            <button type="button" id="cviewbuttons" class="btn btn">New Customer</button>
-                            <button type="button" id="cviewbuttons" class="btn btn">Exiting Customer</button>
-                        </div>
-                        <ul>
-                            <li><p style="margin-top: 12px;">New Customer Option can be Used to Create new Customer Account</p></li>
-                            <li><p>Exiting Customer Option can be used to add services to currently registered customers in the company</p></li>
-                        </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" 
-                                class="btn btn-default" data-dismiss="modal">
-                            Close</button>
-                    </div>
-                </div
-            </div>
-        </div>
     </div>
+</div>
+</div>
+</div>
+</div>
+<!--Customer Service Panel Ended-->
 
-    <!--Popup Pane of Customers-->
+
+<!--Popup Pane of Customers-->
+<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;
+                    </span><span class="sr-only"> Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Choose Customer</h4>
+            </div>
+            <div class="modal-body">
+                <div class="input-inline">
+                    <button type="button" id="cviewbuttons" class="btn btn">New Customer</button>
+                    <button type="button" id="cviewbuttons" class="btn btn">Exiting Customer</button>
+                </div>
+                <ul>
+                    <li><p style="margin-top: 12px;">New Customer Option can be Used to Create new Customer Account</p></li>
+                    <li><p>Exiting Customer Option can be used to add services to currently registered customers in the company</p></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" 
+                        class="btn btn-default" data-dismiss="modal">
+                    Close</button>
+            </div>
+        </div
+    </div>
+</div>
+</div>
+
+<!--Popup Pane of Customers-->
 
 
 
@@ -348,22 +279,28 @@ and open the template in the editor.
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="http://bootsnipp.com/dist/scripts.min.js"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<style type="text/css">
-    #panelheading
-    {
-        background: #004D40;
-        color: white;          
-    }
-    #cservicebtn
-    {
-        background-color: #004D40;
-        color: white;
-        margin-top: 25px;
-    }
-    #cservicebtn:hover
-    {
-        background-color: #009688;
-    }
-</style>
-</style>
+<script>
+                                                                function check()
+                                                                {
+                                                                    var property = document.getElementById('input-region').value;
+                                                                    if (property == 'bike')
+                                                                    {
+                                                                        alert("Bike");
+                                                                        document.getElementById('landpanel').style.display = 'none';
+                                                                        document.getElementById('leasepanel').style.display = 'block';
+                                                                    }
+                                                                    else if (property == 'twheel')
+                                                                    {
+                                                                        alert("Three-Wheel");
+                                                                        document.getElementById('landpanel').style.display = 'none';
+                                                                        document.getElementById('leasepanel').style.display = 'block';
+                                                                    }
+                                                                    else if (property == 'land')
+                                                                    {
+                                                                        alert("Land");
+                                                                        document.getElementById('leasepanel').style.display = 'none';
+                                                                        document.getElementById('landpanel').style.display = 'block';
+                                                                    }
+                                                                }
+</script>
 </html>

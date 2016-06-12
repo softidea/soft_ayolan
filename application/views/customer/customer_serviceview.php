@@ -48,7 +48,6 @@
             {
                 background-color: #009688;
                 color: white;
-                margin-top: 12px;
             }
             #cservicebtn:hover
             {
@@ -310,13 +309,13 @@
                                                     <input type="text" disabled name="fname" id="fname" value="" placeholder="Next Installment" id="input-email" class="form-control" required/>
                                                 </div>
                                             </div>
-                                            <div class="form-inline">
+                                            <div class="form-inline col-sm-12">
                                                 <div class="form" style="float: right;">
 
+                                                    <button type="submit"  class="btn btn" id="cservicebtn">Print</button>
                                                     <button type="submit"  class="btn btn" id="cservicebtn">Add Installment</button>
                                                     <button type="submit"  class="btn btn" id="cservicebtn">View Installment</button>
                                                     <button type="submit"  class="btn btn" id="cservicebtn">Add New Lease</button>
-                                                    <button type="submit"  class="btn btn" id="cservicebtn">Add New Pawn</button>
                                              
                                                 </div>
                                             </div>

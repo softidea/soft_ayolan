@@ -54,9 +54,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="#">Ayolan Investments</a>
+                        
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
+                            <li><a href="<?php echo base_url('user/home');?>" style="text-decoration: none;">Home</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
