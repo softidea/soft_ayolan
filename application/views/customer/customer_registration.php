@@ -66,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li><a href="#">Add Installment</a></li>
                                 </ul>
                             </li>
-                             
+
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
@@ -74,18 +74,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li><a href="#" data-toggle="modal" data-target="#LoginModal">Add a Pawn</a></li>
                                     <li><a href="#">View Services</a></li>
                                     <li><a href="#">View Services</a></li>
+                                    <li><a href="#">Settle Service</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installment<b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Installments<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Pay Installment</a></li>
-                                    <li><a href="#">Add a Pawn</a></li>
-                                    <li><a href="#">View Services</a></li>
-                                    <li><a href="#">View Services</a></li>
+                                    <li><a href="#">View Installment</a></li>
+                                    <li><a href="#">Update Installment</a></li>
+                                    <li><a href="#">Settle Service</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Account</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Customer Report</a></li>
+                                    <li><a href="#">Service Report</a></li>
+                                    <li><a href="#">Installment Report</a></li>
+                                    <li><a href="#">Service Settle Report</a></li>
+                                </ul>
+                            </li>
                         </ul>
                         <div class="col-sm-3 col-md-3 pull-right">
                             <form class="navbar-form" role="search">
