@@ -207,7 +207,8 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-inline">
-                                    <button type="submit"  class="btn btn" id="cservicebtn">Print</button>
+                                    <button type="submit"  class="btn btn" id="cservicebtn">Save as PDF</button>
+                                     <button type="submit"  class="btn btn" id="cservicebtn">Print</button>
                                 </div>
                             </div>
                         </div>
