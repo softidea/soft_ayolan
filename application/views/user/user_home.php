@@ -33,8 +33,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </a>
                             <span class="hidden-xs hidden-sm hidden-md">+94714 339 339</span>
                         </li>
-                        <li><a href="my_account.php" id="wishlist-total" title="My Account"><i class="glyphicon glyphicon-user"></i> <span class="hidden-xs hidden-sm hidden-md">My Account</span></a></li>
-                        <li><a href="login-register.php" id="wishlist-total" title="Register"><i class="glyphicon glyphicon-user"></i> <span class="hidden-xs hidden-sm hidden-md">Logout</span></a></li>	
+                        <li><a href="#" id="wishlist-total" title="My Account"><i class="glyphicon glyphicon-user"></i> <span class="hidden-xs hidden-sm hidden-md">My Account</span></a></li>
+                        <li><a id="wishlist-total" title="Register" href="<?php echo base_url('user'); ?>" style="text-decoration: none;"><i class="glyphicon glyphicon-user"></i> <span class="hidden-xs hidden-sm hidden-md">Logout</span></a></li>	
                     </ul>
                 </div>
             </div>
@@ -151,7 +151,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                         <div class="list-group">
                             <a href="<?php echo base_url('customer/registration'); ?>" style="text-decoration: none;"><button type="button" class="list-group-item">New Registration</button></a>
-                            <a href="<?php echo base_url('customer/updateinfo'); ?>" style="text-decoration: none;"><button type="button" class="list-group-item">Update Customers</button></a>
+                            <a href="<?php echo base_url('customer/update'); ?>" style="text-decoration: none;"><button type="button" class="list-group-item">Update Customers</button></a>
                             <a href="<?php echo base_url('customer'); ?>" style="text-decoration: none;"><button type="button" class="list-group-item">Search Customers</button></s>
                                 <a href="<?php echo base_url('customer/service'); ?>" style="text-decoration: none;"><button type="button" class="list-group-item">Add a Vehicle Lease</button></s>
                                     <a href="<?php echo base_url('customer/service'); ?>" style="text-decoration: none;"><button type="button" class="list-group-item">Add a Land Pawn</button></s>

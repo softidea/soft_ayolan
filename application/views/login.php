@@ -111,19 +111,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <input type="submit" name="login_process" value="Back Login" class="btn" id='btn_login'/>
                                 </form>
                             </div>
-                            <div class="panel-footer">Powered by : <a href="#">Softidea Solutions</a></div>
                         </div>
                     </aside>
                 </div>
             </div>
             <!--Register panel start-->
-
         </div>
         <!--Container Panel Start-->
 
-
-<?php include 'assets/footer.php';?>
-
+    <?php include 'assets/include/footer.php';?>
 
     </body>
     <style>
