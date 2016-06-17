@@ -15,7 +15,7 @@
 include 'css/demo.css';
 include 'css/style8.css';
 ?>
-        </style>
+       </style>
 
         <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
     </head>
