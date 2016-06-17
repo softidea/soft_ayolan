@@ -19,9 +19,9 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="<?php echo base_url('customer/registration'); ?>" style="text-decoration: none;">New Registration</a></li>
-                            <li><a href="<?php echo base_url('customer/updateinfo'); ?>" style="text-decoration: none;">Update Customer</a></li>
+                            <li><a href="<?php echo base_url('admin/customer/update'); ?>" style="text-decoration: none;">Update Customer</a></li>
                             <li><a href="<?php echo base_url('customer'); ?>" style="text-decoration: none;">View Customers</a></li>
-                            <li><a href="<?php echo base_url('customer/installment'); ?>" style="text-decoration: none;">Add Installment</a></li>
+                            <li><a href="<?php echo base_url('customer/installment'); ?>" style="text-decoration: none;">Pay Installment</a></li>
                         </ul>
                     </li>
 
@@ -42,6 +42,15 @@
                             <li><a href="<?php echo base_url('customer/installment'); ?>" style="text-decoration: none;">View Installment</a></li>
                             <li><a href="<?php echo base_url('customer/installment'); ?>" style="text-decoration: none;">Update Installment</a></li>
                             <li><a href="<?php echo base_url('customer/installment'); ?>" style="text-decoration: none;">Settle Service</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Re-Process Management<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="<?php echo base_url('admin/customer/addsis'); ?>">Add New Re-process</a></li>
+                            <li><a href="<?php echo base_url('admin/customer/viewsis'); ?>">View Re-Process</a></li>
+                            <li><a href="<?php echo base_url('admin/customer/viewsis'); ?>">Release Sis</a></li>
+                            <li><a href="<?php echo base_url('admin/customer/checksis'); ?>">Check Re-Process</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">

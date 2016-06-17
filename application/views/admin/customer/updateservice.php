@@ -31,13 +31,13 @@
             }
             #cviewbuttons
             {
-                background-color: #004D40;
+                background-color: #009688;
                 color: white;
 
             }
             #cviewbuttons:hover
             {
-                background-color: #009688;
+                background-color: #004D40;
             }
             #panelheading
             {
@@ -46,23 +46,23 @@
             }
             #cservicebtn
             {
-                background-color: #004D40;
+                background-color: #009688;
                 color: white;
                 margin-top: 12px;
             }
             #cservicebtn:hover
             {
-                background-color: #009688;
+                background-color: #004D40;
             }
             #custcontinue
             {
-                background-color: #004D40;
+                background-color: #009688;
                 color: white;
                 float: right;
             }
             #custcontinue:hover
             {
-                background-color: #009688;
+                background-color: #004D40;
             }
             //.thcaption{text-align: center;}
             #backregister
@@ -89,7 +89,7 @@
                         <div class="panel-heading" id="panelheading">
                             <h3 class="panel-title">Customer Service Information</h3>
                         </div>
-                        <div class="panel-body" style="background-color: #757575;">
+                        <div class="panel-body" style="background-color: #FAFAFA;">
                             <div class="col-sm-6">
                                 <fieldset id="account">
                                     <legend>Search Option-01</legend>
